@@ -1,0 +1,98 @@
+CRITICAL - 2023-09-21 14:16:54 --> CodeIgniter\Router\RouteCollection::get(): Argument #3 ($options) must be of type ?array, string given, called in C:\laragon\www\Laboratory_1\app\Config\Routes.php on line 9
+in SYSTEMPATH\Router\RouteCollection.php on line 1011.
+ 1 APPPATH\Config\Routes.php(9): CodeIgniter\Router\RouteCollection->get('/product', 'ProductController::index', 'ProductController::category')
+ 2 SYSTEMPATH\Router\RouteCollection.php(339): require('C:\\laragon\\www\\Laboratory_1\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(787): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Laboratory_1\\public\\index.php')
+CRITICAL - 2023-09-21 14:20:50 --> Undefined variable $category
+in APPPATH\Views\products.php on line 92.
+ 1 APPPATH\Views\products.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $category', 'C:\\laragon\\www\\Laboratory_1\\app\\Views\\products.php', 92)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Laboratory_1\\app\\Views\\products.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('products', [...], true)
+ 5 APPPATH\Controllers\ProductController.php(56): view('products', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Laboratory_1\\public\\index.php')
+CRITICAL - 2023-09-21 14:22:43 --> Undefined variable $category
+in APPPATH\Views\products.php on line 92.
+ 1 APPPATH\Views\products.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $category', 'C:\\laragon\\www\\Laboratory_1\\app\\Views\\products.php', 92)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Laboratory_1\\app\\Views\\products.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('products', [...], true)
+ 5 APPPATH\Controllers\ProductController.php(56): view('products', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Laboratory_1\\public\\index.php')
+CRITICAL - 2023-09-21 14:23:43 --> Undefined variable $category
+in APPPATH\Views\products.php on line 92.
+ 1 APPPATH\Views\products.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $category', 'C:\\laragon\\www\\Laboratory_1\\app\\Views\\products.php', 92)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Laboratory_1\\app\\Views\\products.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('products', [...], true)
+ 5 APPPATH\Controllers\ProductController.php(56): view('products', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Laboratory_1\\public\\index.php')
+CRITICAL - 2023-09-21 14:42:10 --> CodeIgniter\Database\BaseBuilder::get(): Argument #1 ($limit) must be of type ?int, string given, called in C:\laragon\www\Laboratory_1\system\Model.php on line 871
+in SYSTEMPATH\Database\BaseBuilder.php on line 1607.
+ 1 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get('ProductCategory')
+ 2 APPPATH\Controllers\ProductController.php(56): CodeIgniter\Model->__call('get', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Laboratory_1\\public\\index.php')
+CRITICAL - 2023-09-21 14:43:13 --> Undefined array key "ProductNameode"
+in APPPATH\Views\products.php on line 120.
+ 1 APPPATH\Views\products.php(120): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ProductNameode"', 'C:\\laragon\\www\\Laboratory_1\\app\\Views\\products.php', 120)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Laboratory_1\\app\\Views\\products.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('products', [], true)
+ 5 APPPATH\Controllers\ProductController.php(58): view('products', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Laboratory_1\\public\\index.php')
+CRITICAL - 2023-09-21 15:36:39 --> Undefined array key "ID"
+in APPPATH\Controllers\ProductController.php on line 69.
+ 1 APPPATH\Controllers\ProductController.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ID"', 'C:\\laragon\\www\\Laboratory_1\\app\\Controllers\\ProductController.php', 69)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductController->save_c()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Laboratory_1\\public\\index.php')
+CRITICAL - 2023-09-21 15:43:08 --> Undefined variable $categ
+in APPPATH\Views\products.php on line 177.
+ 1 APPPATH\Views\products.php(177): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categ', 'C:\\laragon\\www\\Laboratory_1\\app\\Views\\products.php', 177)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Laboratory_1\\app\\Views\\products.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('products', [], true)
+ 5 APPPATH\Controllers\ProductController.php(63): view('products', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Laboratory_1\\public\\index.php')
+CRITICAL - 2023-09-21 16:14:11 --> Undefined variable $product
+in APPPATH\Views\products.php on line 141.
+ 1 APPPATH\Views\products.php(141): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product', 'C:\\laragon\\www\\Laboratory_1\\app\\Views\\products.php', 141)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Laboratory_1\\app\\Views\\products.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('products', [], true)
+ 5 APPPATH\Controllers\ProductController.php(88): view('products', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductController->edit_c('2')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Laboratory_1\\public\\index.php')
