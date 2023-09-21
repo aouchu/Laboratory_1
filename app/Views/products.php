@@ -126,7 +126,7 @@
     <!-- END OF CRUD PRODUCTS -->
 
     <!-- TABLE OF PRODUCTS AND LIST OF CATEGORIES -->
-    <div style='float:left;overflow:auto;background-color:black;margin:20px;border-radius:20px;padding:30px;width:42%;color:white;'>
+    <div style='float:right;overflow:auto;background-color:black;margin:20px;border-radius:20px;padding:30px;width:42%;color:white;'>
     <center>
     <h2 style='color:white'>Products' Table</h2>
     <table border='1'>
@@ -173,16 +173,16 @@
 <!--END FOR CRUD FOR CATEGORIES -->
 
 <!-- LIST OF CATEGORIES -->
-<div style='float:left;overflow:auto;background-color:black;margin:20px;border-radius:20px;padding:30px;width:42%;color:white;font-family:"lato", "sans-serif"'>
+<div style='float:right;overflow:auto;background-color:black;margin:20px;border-radius:20px;padding:30px;width:42%;color:white;font-family:"lato", "sans-serif"'>
 <center>
 <h2 style='color:white'>List of Categories</h2>
-<hr style="color:white;width:100% !important;border:solid 1px !important">
+<hr style="color:white;width:99% !important;border:solid 1px !important">
 </center>
 <?php foreach($category as $ca): ?>
     <li style='white-space: pre'><?=$ca['ProductCategory'] ?>
     <pre style='text-align:right !important'><a href='/delete_c/<?= $ca['ID'] ?>'>Delete</a> | <a href='/edit_c/<?= $ca['ID'] ?>'>Edit</a></pre></li>
     <?php endforeach; ?>
-<hr style="color:white;width:100% !important;border:solid 1px !important">
+<hr style="color:white;width:99% !important;border:solid 1px !important">
 <center>
 <h4><pre>For educational purposes only
 <a href='https://pixabay.com/gifs/houses-village-building-loop-5002/' target='_blank'>GIF by Gustavo Rezende from Pixabay</a>
