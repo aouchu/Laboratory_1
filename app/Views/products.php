@@ -42,14 +42,10 @@
     h4 {
         font-family: 'Lato', sans-serif;
     }
-    table {
+    ul {
         font-family: 'Lato', sans-serif;
-        font-size:smaller;
-        table-layout:auto;
         width: 100%;
-        border: solid;
-        overflow-x:auto;
-        overflow-y:auto;
+        list-style-type: square;
     }
     td{
         text-align: center
@@ -69,9 +65,6 @@
     }
     .hov:hover {
         background-color:gray;
-    }
-    bold {
-        font-family: 'Lato', sans-serif;
     }
 
     </style>
@@ -129,31 +122,20 @@
     <div style='float:right;overflow:auto;background-color:black;margin:20px;border-radius:20px;padding:30px;width:42%;color:white;'>
     <center>
     <h2 style='color:white'>Products' Table</h2>
-    <table border='1'>
-        <tr>
-        <th>Product
-            Name</th>
-        <th>Product
-            Description</th>
-        <th>Product
-            Category</th>
-        <th>Product
-            Quantity</th>
-        <th>Product
-            Price</th>
-        <th>Action</th>
-</tr>
 <?php foreach($product as $pr):?>
-<tr>
-    <td><?= $pr['ProductName']?></td>
-    <td><?= $pr['ProductDescription']?></td>
-    <td><?= $pr['ProductCategory']?></td>
-    <td><?= $pr['ProductQuantity']?></td>
-    <td><?= $pr['ProductPrice']?></td>
-    <td><a href="/delete/<?= $pr['ID'] ?>">Delete</a> | <a href="/edit/<?= $pr['ID'] ?>">Edit</a></td>
-</tr>
+<ul>
+    <hr style="color:white;width:98% !important;border:solid .2px !important">
+    <li>Product Name: <?= $pr['ProductName']?></li>
+    <hr style="color:white;width:98% !important;border:solid .2px !important">
+    <li>Product Description: <?= $pr['ProductDescription']?></li>
+    <li>Product Category: <?= $pr['ProductCategory']?></li>
+    <li>Product Quantity: <?= $pr['ProductQuantity']?></li>
+    <li>Product Price: <?= $pr['ProductPrice']?></li>
+    <li>Action: <a href="/delete/<?= $pr['ID'] ?>">Delete</a> | <a href="/edit/<?= $pr['ID'] ?>">Edit</a></li>
+    <br>
+</ul>
 <?php endforeach; ?>
-</table>
+<hr style="color:white;width:98% !important;border:solid 1px !important">
 </center>
 </div>
 <!-- END FOR TABLE OF PRODUCTS-->
@@ -178,10 +160,12 @@
 <h2 style='color:white'>List of Categories</h2>
 <hr style="color:white;width:99% !important;border:solid 1px !important">
 </center>
+<ul>
 <?php foreach($category as $ca): ?>
     <li style='white-space: pre'><?=$ca['ProductCategory'] ?>
     <pre style='text-align:right !important'><a href='/delete_c/<?= $ca['ID'] ?>'>Delete</a> | <a href='/edit_c/<?= $ca['ID'] ?>'>Edit</a></pre></li>
     <?php endforeach; ?>
+</ul>
 <hr style="color:white;width:99% !important;border:solid 1px !important">
 <center>
 <h4><pre>For educational purposes only
